@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return {
-        "message": "Hello world!"
+        "message": "Hello world!",
         "version": "0.1",
     }
 
