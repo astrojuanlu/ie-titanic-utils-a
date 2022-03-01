@@ -19,5 +19,5 @@ def do_tokenize():
 
 if __name__ == "__main__":
     import os
-    port = int(os.environ["PORT"])
+    port = 5000  # FIXME: Running along with Voilà
     app.run(host="0.0.0.0", port=port)
