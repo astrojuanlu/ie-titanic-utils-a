@@ -14,7 +14,7 @@ def do_tokenize():
     print(request.args)
     sentence = request.args["sentence"]
     lower = bool(request.args.get("lower", False))
-    return str(tokenize(sentence, lower=lower))
+    return {"tokens": tokenize(sentence, lower=lower)}
 
 
 if __name__ == "__main__":
